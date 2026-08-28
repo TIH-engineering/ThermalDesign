@@ -168,7 +168,7 @@
         "min_via_diameter": 0.4,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -582,7 +582,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Template.kicad_pro",
+    "filename": "ThermalDesign.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -744,8 +744,8 @@
       "model_mode": 0,
       "workbook_filename": ""
     },
-    "page_layout_descr_file": "${KIPRJMOD}/templates/default.kicad_wks",
-    "plot_directory": "",
+    "page_layout_descr_file": "${KIPRJMOD}\\templates\\default.kicad_wks",
+    "plot_directory": "7Phasenblinker",
     "reuse_designators": true,
     "space_save_all_events": true,
     "spice_adjust_passive_values": false,
@@ -759,8 +759,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "Template.kicad_sch",
-        "name": "Template",
+        "filename": "ThermalDesign.kicad_sch",
+        "name": "ThermalDesign",
         "uuid": "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
       }
     ],
@@ -770,18 +770,18 @@
   "sheets": [
     [
       "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55",
-      "Template"
+      "ThermalDesign"
     ]
   ],
   "text_variables": {
     "acronym": "",
     "company": "HTL-Rankweil",
-    "creator": "[NAME]",
-    "date": "",
+    "creator": "TIH",
+    "date": "2025-12-29",
     "license": "CC BY-NC-SA 4.0",
-    "link": "[REPOSITORY URL]",
-    "revision": "0.1",
-    "title": "[PROJECT TITLE]"
+    "link": "github.com/htl-rankweil",
+    "revision": "1.0",
+    "title": "ThermalDesign"
   },
   "tuning_profiles": {
     "meta": {

@@ -1,25 +1,33 @@
-# [PROJECT TITLE]
+# ThermalDesign
 
-[![release](https://img.shields.io/github/v/release/[GITHUB_USER]/[REPOSITORY]?label=release)](https://github.com/[GITHUB_USER]/[REPOSITORY]/releases)
-[![Build](https://github.com/[GITHUB_USER]/[REPOSITORY]/actions/workflows/build.yml/badge.svg)](https://github.com/[GITHUB_USER]/[REPOSITORY]/actions/workflows/build.yml)
+[![release](https://img.shields.io/github/v/release/TIH-engineering/ThermalDesign?label=release)](https://github.com/TIH-engineering/ThermalDesign/releases)
+[![Build](https://github.com/TIH-engineering/ThermalDesign/actions/workflows/build.yml/badge.svg)](https://github.com/TIH-engineering/ThermalDesign/actions/workflows/build.yml)
 ![Hardware](https://img.shields.io/badge/Hardware-KiCad-blue)
 ![License](https://img.shields.io/badge/License-CC--BY--NC--SA--4.0-lightgrey)
 
 ## 🔌 Leiterplattenbeschreibung
 
-Die Leiterplatte **[PROJECT TITLE]** wurde für [kurze Beschreibung des Einsatzzwecks] entwickelt.
+Die Leiterplatte **ThermalDesign** dient zur praktischen Untersuchung des **thermischen Verhaltens elektronischer Bauteile**. Als Versuchsobjekt werden mehrere LM317-Linearregler unter unterschiedlichen thermischen Bedingungen und bei verschiedenen Belastungen betrieben.
 
-[Hier 2–4 Sätze zur Funktion der Leiterplatte, zum Aufbau und zum vorgesehenen Einsatz.]
+Die Leiterplatte enthält vier vergleichbare Spannungsreglerstufen mit einer Ausgangsspannung von etwa **2,5 V**. Die Regler unterscheiden sich insbesondere hinsichtlich ihrer thermischen Anbindung:
 
-### Funktionen
+- **LM317 im SOT-223-Gehäuse**
+- **LM317 im TO-220-Gehäuse**
+- **LM317 im SOT-223-Gehäuse mit zusätzlicher Kupferfläche zur Wärmeabfuhr**
+- **LM317 im TO-220-Gehäuse mit Kühlkörper**
 
-- [Funktion / Schaltung 1]
-- [Funktion / Schaltung 2]
-- [Funktion / Schaltung 3]
+Über verschiedene Lastwiderstände können unterschiedliche Lastfälle eingestellt werden. Vorgesehen sind Untersuchungen bei ungefähr:
 
-[Optionaler Absatz zu besonderen Eigenschaften, Messpunkten, austauschbaren Bauteilen, Schnittstellen usw.]
+- **100 mA**
+- **250 mA**
+- **500 mA**
+- **1 A** als gepulste Last
 
-> **Einsatzgebiet:** [Kurze Beschreibung des vorgesehenen Einsatzes]
+Die 1-A-Last wird über einen MOSFET geschaltet und kann mit einem externen PWM-Signal angesteuert werden. Dadurch lassen sich neben stationären Temperaturzuständen auch **dynamische Erwärmungs- und Abkühlvorgänge** untersuchen.
+
+Mit der Leiterplatte können unter anderem der Zusammenhang zwischen **Verlustleistung, Bauteiltemperatur, thermischem Widerstand, Gehäusebauform, Kupferfläche und Kühlkörper** experimentell untersucht werden. Die Messergebnisse können mit theoretischen Berechnungen oder thermischen Ersatzschaltbildern verglichen werden.
+
+> **Einsatzgebiet:** Laborübungen und Unterricht zu thermischem Design, Verlustleistung, Wärmewiderständen, Linearreglern und Kühlung elektronischer Bauteile
 
 ---
 
@@ -61,10 +69,10 @@ Die Dateien werden automatisch durch den Release-Workflow erzeugt.
 
 | Eigenschaft | Wert |
 |---|---|
-| **Projekt** | [PROJECT TITLE] |
+| **Projekt** | ThermalDesign |
 | **Software** | KiCad 10 |
-| **Repository** | [GITHUB_USER]/[REPOSITORY] |
-| **Autor** | [NAME] |
+| **Repository** | TIH-engineering/ThermalDesign |
+| **Autor** | [TIH] |
 | **Lizenz** | CC BY-NC-SA 4.0 |
 
 ---
